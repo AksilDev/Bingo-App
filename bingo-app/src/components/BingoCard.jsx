@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import './BingoCard.css';
 
-const BingoCard = ({ card, cardNumber, onCheckWin, isWinner }) => {
+
+const BingoCard = ({ card: cardNumbers, token, cardNumber, onCheckWin, isWinner }) => {
   const [markedCells, setMarkedCells] = useState(new Set());
 
   const toggleCell = (column, value) => {
+    // ... (rest of the toggleCell function)
     const cellKey = `${column}-${value}`;
     const newMarked = new Set(markedCells);
 
@@ -46,11 +48,12 @@ const BingoCard = ({ card, cardNumber, onCheckWin, isWinner }) => {
       </div>
 
       <div className="bingo-grid">
-        {renderColumn('B', card.B)}
-        {renderColumn('I', card.I)}
-        {renderColumn('N', card.N)}
-        {renderColumn('G', card.G)}
-        {renderColumn('O', card.O)}
+        {/* FIX 1: Use 'cardNumbers' instead of 'numbers' */}
+        {renderColumn('B', cardNumbers.B)}
+        {renderColumn('I', cardNumbers.I)}
+        {renderColumn('N', cardNumbers.N)}
+        {renderColumn('G', cardNumbers.G)}
+        {renderColumn('O', cardNumbers.O)}
       </div>
 
       <button
@@ -62,7 +65,8 @@ const BingoCard = ({ card, cardNumber, onCheckWin, isWinner }) => {
       </button>
 
       <div className="card-token">
-        Token: {card.playcard_token}
+        {/* FIX 2: Use 'token' instead of 'playcard_token' */}
+        Token: {token}
       </div>
     </div>
   );

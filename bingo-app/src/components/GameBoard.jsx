@@ -61,12 +61,14 @@ const GameBoard = ({ gameCode, cards, onAddCard, onLeaveGame }) => {
           cards.map((card, index) => (
             <BingoCard
               key={`${card.playcard_token}-${index}`}
-              card={card.card}
+              card={card.card} // <-- Passes only the B, I, N, G, O object
+              token={card.playcard_token} // <-- Passes the token separately 
               cardNumber={index + 1}
               onCheckWin={() => handleCheckWin(index, card.playcard_token)}
               isWinner={winners.has(index)}
             />
           ))
+          
         )}
       </div>
 
