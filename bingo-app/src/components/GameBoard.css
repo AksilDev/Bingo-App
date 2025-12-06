@@ -1,6 +1,6 @@
 .game-board {
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffd700 0%, #9acd32 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #CDDC39 100%);
   padding: 2rem;
 }
 
@@ -34,7 +34,7 @@
 .game-code-display span {
   font-weight: 700;
   color: #000;
-  background: linear-gradient(135deg, #ffd700 0%, #9acd32 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #CDDC39 100%);
   padding: 0.3rem 0.8rem;
   border-radius: 8px;
 }
@@ -57,7 +57,7 @@
 }
 
 .add-card-button {
-  background: linear-gradient(135deg, #9acd32 0%, #7ab82b 100%);
+  background: linear-gradient(135deg, #CDDC39 0%, #AFB42B 100%);
   color: #000;
 }
 
@@ -123,7 +123,7 @@
 
 .spinner {
   border: 5px solid rgba(255, 255, 255, 0.3);
-  border-top: 5px solid #ffd700;
+  border-top: 5px solid #FFC107;
   border-radius: 50%;
   width: 60px;
   height: 60px;

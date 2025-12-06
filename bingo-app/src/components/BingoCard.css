@@ -14,16 +14,16 @@
 }
 
 .bingo-card.winner {
-  border-color: #ffd700;
+  border-color: #FFC107;
   animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
   0%, 100% {
-    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 8px 30px rgba(255, 193, 7, 0.5);
   }
   50% {
-    box-shadow: 0 8px 40px rgba(255, 215, 0, 0.8);
+    box-shadow: 0 8px 40px rgba(255, 193, 7, 0.8);
   }
 }
 
@@ -41,7 +41,7 @@
 }
 
 .winner-badge {
-  background: linear-gradient(135deg, #ffd700 0%, #9acd32 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #CDDC39 100%);
   color: #000;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -72,7 +72,7 @@
 }
 
 .column-header {
-  background: linear-gradient(135deg, #ffd700 0%, #9acd32 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #CDDC39 100%);
   color: #000;
   font-weight: 900;
   font-size: 1.5rem;
@@ -84,7 +84,7 @@
 
 .bingo-cell {
   background: #f8f8f8;
-  border: 2px solid #9acd32;
+  border: 2px solid #CDDC39;
   padding: 0.8rem;
   text-align: center;
   font-weight: 600;
@@ -101,9 +101,9 @@
 }
 
 .bingo-cell.marked {
-  background: linear-gradient(135deg, #ffd700 0%, #9acd32 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #CDDC39 100%);
   color: #000;
-  border-color: #ffd700;
+  border-color: #FFC107;
   font-weight: 900;
   transform: scale(0.95);
 }
@@ -117,7 +117,7 @@
   padding: 0.8rem;
   font-size: 1.1rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #9acd32 0%, #7ab82b 100%);
+  background: linear-gradient(135deg, #CDDC39 0%, #AFB42B 100%);
   color: #000;
   border: none;
   border-radius: 10px;

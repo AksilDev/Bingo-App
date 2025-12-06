@@ -1,11 +1,14 @@
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}"
+  ],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        'honey-yellow': '#FFD700',
-        'lime-green': '#32CD32',
+        'honey-yellow': '#FFC107',
+        'lime-green': '#CDDC39',
       }
     }
   },
